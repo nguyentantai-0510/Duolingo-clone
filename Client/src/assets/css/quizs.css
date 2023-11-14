@@ -1,0 +1,18 @@
+.main__concept{
+    width: 100%;
+    min-height: 100px;
+    max-width: 1060px;
+    padding-top: 32px;
+    margin: 0 auto;
+}
+.quizs__home{
+    gap: 48px;
+}
+.quiz__levels{
+    margin: 0 auto;
+    width: 630px;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    /* display: none; */
+}

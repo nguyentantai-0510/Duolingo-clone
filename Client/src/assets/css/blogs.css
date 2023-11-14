@@ -1,0 +1,215 @@
+a{
+    text-decoration: none;
+}
+.blogs__content{
+    width: 100%;
+    max-width: calc(1200px - 256px);
+    margin: 50px auto;
+}
+.blog__create{
+    position: absolute;
+    bottom: 30px;
+    right: 24px;
+}
+.blog__create button{
+    cursor: pointer;
+    border-radius: 10px;
+}
+.blogs__feed{
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    flex-basis: calc(100% / 3 - 36px);
+    margin: 0 18px 36px;
+    background-color: #1cb0f6;
+    padding: 25px 30px;
+    border-radius: 8px;
+    transition: .2s;
+}
+article:hover{
+    transform: translateY(-10px);
+}
+
+.blog__content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.blog__timepost{
+    font-size: 15px;
+    font-weight: 700;
+    color: #ddd;
+}
+
+.blog__title{
+    flex: 1;
+    padding-top: 18px;
+}
+.blog__author{
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 18px;
+}
+.ck.ck-editor {
+    position: relative;
+    margin-top: 17px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+.header__title{
+    margin: 15px 0;
+    font-size: 1.1rem;
+    line-height: 42px;
+}
+.header__time{
+    font-size: 18px;
+    font-weight: 600;
+}
+.header__author{
+    font-style: italic;
+    color: #717070;
+}
+.blog__body{
+    margin-top: 2rem;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+}
+.body__content{
+    line-height: 25px;
+}
+.blog__container{
+    padding: 0 0 5rem;
+    position: relative;
+}
+.blog__options{
+    position: absolute;
+    right: 21px;
+    top: -18px;
+}
+.blog__options .btn__edit,
+.blog__options .btn__remove{
+    display: inline;
+    margin: 0 5px;
+}
+.btn__edit button, .btn__remove button{    
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 100%;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+}
+.btn__edit button{
+    background-color: #1cb0f6;
+}
+.btn__edit button::after{
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background: #1cb0f6;
+    border-radius: 8px;
+    box-shadow: 0 8px 0 rgb(0, 0 ,0 ,.2),0 8px 0 #1782b3;
+    height: 37px;
+    top: 0;
+}
+.btn__remove button{
+    background-color: #f00f16;
+}
+.btn__remove button::after{
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background: #f00f16;
+    border-radius: 8px;
+    box-shadow: 0 8px 0 rgb(0, 0 ,0 ,.2),0 8px 0 #a10a0f;;
+    height: 37px;
+    top: 0;
+}
+.confirm__modal{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    animation: modal .2s;
+}
+.confirm__container{
+    background-color: #fff;
+    padding: 15px 30px;
+    min-height: 10rem;
+    border-radius: 9px;
+    width: auto;
+    margin-bottom: 8rem;
+    animation: popup .2s;
+}
+.confirm__button{
+    float: right;
+}
+.confirm__button button{
+    margin: 20px 8px;
+    padding: 10px 33px;
+    color: #fff;
+    font-size: 100%;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.confirm__btn{
+    background: #0fc621;
+}
+.refuse__btn{
+    background: #f00f16;
+}
+.input__change{
+    width: 100%;
+    padding: 10px 25px;
+    font-size: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.input__change:focus{
+    outline: none;
+}
+h1,h2,h3,h4{
+    margin: 10px 0;
+}
+p{
+    line-height: 28px;
+    color: #777;
+}
+ul{
+    color: #777;
+    margin: 25px 0;
+    padding: 0 20px;
+}
+@keyframes popup{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes modal{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

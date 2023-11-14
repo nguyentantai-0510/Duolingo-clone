@@ -1,0 +1,130 @@
+.quiz__levels {
+    margin: 0 auto;
+    max-width: 630px;
+    flex: 1;
+}
+.levels__pending{
+    margin-top: 3rem;
+    font-size: 34px;
+    position: relative;
+    display: inline-block;
+}
+.pending__img{
+    width: 70px;
+    position: absolute;
+    right: -60px;
+    top: 0;
+}
+.quiz__levels__header{
+    background-size: 100% 100%;
+    border-radius: 13px;
+    padding: 22px 16px;
+    row-gap: 6px;
+}
+.quiz__levels__header__title{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.36;
+    margin: 0;
+}
+.quiz__levels__header__des{
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.quiz__levels__header__tips{
+    padding: 12px;
+    grid-column: 2;
+    grid-row: 1/3;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 15px;
+}
+.primary__header__design{
+    align-items: center;
+    background: #1cb0f6;
+    background-size: 700px 200px;
+    color: #fff;
+    display: grid;
+    overflow: hidden;
+    padding: 16px;
+    position: relative;
+    row-gap: 3px;
+}
+.level{
+    margin-top: 10px;
+}
+.level__first{
+    margin-top: 67px;
+}
+.level__btn{
+    margin: 14px;
+}
+.level__btn button{
+    background: none;
+    border: none;
+    transition: filter .2s;
+    background-color: #1cb0f6;
+    height: 65px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 30px;
+    position: relative;
+    width: 70px;
+    z-index: 0;
+    cursor: pointer;
+}
+.level__btn button::before{
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.level__btn button::after
+{    
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background: #1cb0f6;
+    border-radius: 10px;
+    box-shadow: 0 8px 0 rgb(0, 0 ,0 ,.2),0 8px 0 #1782b3;
+    height: 57px;
+    top: 0;
+}
+.level__btn .hasdone{
+    background: #05e309;
+}
+.level__btn .hasdone::after{
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background: #05e309;
+    border-radius: 10px;
+    box-shadow: 0 8px 0 rgb(0, 0 ,0 ,.2),0 8px 0 #03910c;
+    height: 57px;
+    top: 0;
+}
+.level__btn .disabled{
+    background-color: #ccc;
+}
+.level__btn .disabled::after{
+    background-color: #ccc;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 0 8px 0 rgb(0, 0 ,0 ,.2),0 8px 0 #646564;
+    height: 57px;
+    top: 0;
+}

@@ -1,0 +1,100 @@
+.user__container{
+    width: 100%;
+    max-width: calc(1200px - 256px);
+    margin: 50px auto;
+}
+.user__detail{
+    display: flex;
+    gap: 50px;
+    padding: 25px 0;
+}
+.user__image{
+    position: relative;
+}
+.user__detail img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user__change__image{
+    position: absolute;
+    background-color: #1cb0f6;
+    width: 10px;
+    height: 30px;
+    top: 12px;
+    right: 7px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.user__change__image .change__btn{
+    width: 15px;
+    height: 15px;
+    border-radius: 0;
+}
+.user__info{
+    flex: 1;
+}
+.user__edit{
+    margin: 10px 0;
+}
+.blogs__title{
+    text-align: center;
+}
+.input__file{
+    opacity: 0;
+    position: absolute;
+}
+.confirm__change{
+    margin: 10px 0;
+}
+.confirm__change button{
+    background-color: #1cb0f6;
+    color: #fff;
+    font-size: 100%;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.confirm__change button::after{
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background: #1cb0f6;
+    border-radius: 15px;
+    box-shadow: 0 8px 0 rgb(0, 0 ,0 ,.2),0 8px 0 #1782b3;
+    height: 38px;
+    top: 0;
+}
+.user__logout{
+    margin-top: 1rem;
+}
+.user__logout button{
+    background-color: #f00f16;
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 100%;
+    font-weight: 600;
+    color: #fff;
+    height: 40px;
+}
+.user__logout button::after{
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background: #f00f16;
+    border-radius: 8px;
+    box-shadow: 0 8px 0 rgb(0, 0 ,0 ,.2),0 8px 0 #a10a0f;;
+    height: 35px;
+    top: 0;
+}

@@ -1,0 +1,76 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Source Sans 3', sans-serif;
+  }
+html, body{
+    height: 100%;
+}
+  .border__right__fullHeight {
+      border-right: 2px solid rgba(229, 229, 229, 1);
+      height: 100vh;
+      overflow-y: auto;
+  }
+
+  .fixed__left {
+      left: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+  }
+
+  .flex {
+      display: flex;
+  }
+
+  .wrap {
+      flex-wrap: wrap;
+  }
+
+  .flex__row {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .align-item__center {
+      align-items: center;
+  }
+
+  .flex__column {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .flex__end {
+      align-self: flex-end;
+      bottom: 24px;
+      flex-direction: column-reverse;
+      position: sticky;
+  }
+
+  .grid {
+      display: grid;
+  }
+
+  .grid__col__5 {
+      grid-template-columns: repeat(5, 1fr);
+  }
+
+  .grid__row__auto {
+      grid-auto-rows: auto;
+  }
+  .grid__col__2-4{
+    grid-column: 2/4;
+  }
+  .grid__col__3-5{
+    grid-column: 3/5;
+  }
+  .grid__col__3-4{
+    grid-column: 3/4;
+  }
+  .grid__row__2-4{
+    grid-row: 2/4;
+  }
